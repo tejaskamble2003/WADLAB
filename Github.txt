@@ -1,0 +1,40 @@
+Step 1 Download Git
+
+Step 2 Create a floder  and open it VS Code
+	open Terminal In VS code Run Following commands
+PS E:\Raj> git --version
+git version 2.45.0.windows.1
+Initialized empty Git repository in E:/Raj/.git/
+PS E:\Raj> git add .
+[master (root-commit) 6edc83c] Hello
+ create mode 100644 index.html
+PS E:\Raj> git remote add origin "https://github.com/tejaskamble2003/WADLAB.git"
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/tejaskamble2003/WADLAB.git'
+PS E:\Raj> git remote -v 
+origin  https://github.com/tejaskamble2003/WADLAB.git (fetch)
+origin  https://github.com/tejaskamble2003/WADLAB.git (push)
+PS E:\Raj> git branch  
+* master
+PS E:\Raj> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/tejaskamble2003/WADLAB.git'
+PS E:\Raj> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 358 bytes | 179.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/tejaskamble2003/WADLAB.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS E:\Raj> 
+
+After git push -u origin master this commads open browser terminal login your github account
+
+
+-git config --global user.name "username"
+git config --global user.email "email"
+git config --list
